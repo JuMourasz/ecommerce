@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">ShopEase</a>
+
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="pagina-produtos">
+            <h1>Nossos produtos</h1>
+            <p>Confira nossas opções disponíveis.</p>
+
+            <input
+                type="search"
+                id="campoPesquisa"
+                placeholder="Pesquisar produto..."
+            >
+
+            <div id="listaProdutos" class="produtos-grid">
+                <!-- Os produtos serão inseridos pelo JavaScript -->
+            </div>
+
+            <p id="mensagemProdutos"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ShopEase - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+</html>

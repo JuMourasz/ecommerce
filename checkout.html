@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Finalizar compra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">ShopEase</a>
+
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="carrinho.html">Carrinho</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <form id="formCheckout">
+            <h1>Finalizar compra</h1>
+            <p>Informe os dados para a entrega.</p>
+
+            <label for="nomeCliente">Nome completo</label>
+            <input type="text" id="nomeCliente" required>
+
+            <label for="emailCliente">E-mail</label>
+            <input type="email" id="emailCliente" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" placeholder="00000-000" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" placeholder="Rua, número e bairro" required>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" required>
+
+            <label for="pagamento">Forma de pagamento</label>
+            <select id="pagamento" required>
+                <option value="">Selecione uma opção</option>
+                <option value="pix">PIX (simulado)</option>
+                <option value="cartao">Cartão (simulado)</option>
+                <option value="boleto">Boleto (simulado)</option>
+            </select>
+
+            <div class="resumo-compra">
+                <h2>Resumo do pedido</h2>
+                <p>Total: <strong id="totalCheckout">R$ 0,00</strong></p>
+            </div>
+
+            <button type="submit" class="btn">Confirmar pedido</button>
+
+            <p id="mensagemCheckout"></p>
+        </form>
+    </main>
+
+    <script src="js/database.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

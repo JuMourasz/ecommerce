@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Carrinho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">ShopEase</a>
+
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="carrinho.html">Carrinho</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Meu carrinho</h1>
+
+        <div id="itensCarrinho">
+            <!-- Os itens serão inseridos pelo JavaScript -->
+        </div>
+
+        <div class="resumo-carrinho">
+            <h2>Resumo do pedido</h2>
+            <p>Total: <strong id="totalCarrinho">R$ 0,00</strong></p>
+
+            <a href="produtos.html" class="btn btn-secundario">Continuar comprando</a>
+            <a href="checkout.html" class="btn">Finalizar compra</a>
+        </div>
+    </main>
+
+    <script src="js/database.js"></script>
+    <script src="js/carrinho.js"></script>
+</body>
+</html>
